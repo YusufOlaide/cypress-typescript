@@ -1,0 +1,27 @@
+{
+  "name": "perlego",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "cypress:open": "cypress open",
+    "cypress:run": "cypress run",
+    "cypress:runall": "npm run cypress:run --spec cypress\\e2e\\BDD --headed --browser chrome"
+  },
+  "author": "Yusuf Olaide",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^12.10.0",
+    "cypress-pipe": "^2.0.0",
+    "mochawesome": "^7.1.3",
+    "typescript": "^5.0.4"
+  },
+  "dependencies": {
+    "@badeball/cypress-cucumber-preprocessor": "^16.0.3",
+    "@bahmutov/cypress-esbuild-preprocessor": "^2.2.0",
+    "esbuild": "^0.17.17"
+  },
+  "cypress-cucumber-preprocessor": {
+    "nonGlobalStepDefinitions": false
+  }
+}
